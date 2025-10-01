@@ -69,7 +69,6 @@ export const Login = async (req, res) => {
 const token=genToken(user._id)
     // 5. Send response
 
-    console.log(token)
      res.cookie("token",token,{
         httpOnly:true,
         SameSite:"strict",
