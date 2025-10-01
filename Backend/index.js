@@ -12,7 +12,8 @@ app.use(cookieParser())
 
 app.use("/user",userRouter)
 
+
 app.listen(port,()=>{
-    console.log(`server is listening on port  ${port}`)
+    console.log(`server is listening on port Number ${port}`)
     connectDb()
 })
